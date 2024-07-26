@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULARIO DE CONTACTO</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        input[type="text"], input[type="email"], select{
+            background: white;
+            height: 30px;
+            border-radius: 6px;
+            border: 1px solid blueviolet;
+            margin-bottom: 15px;
+        }
+        form{
+            display: flex;
+            width: 350px;
+            flex-direction: column;
+        }
+        label{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body style="background-color: darkseagreen;">
     <header style="background-color: chocolate; font-style: italic; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: large; color: white; text-align: center; padding-top: 15px; padding-bottom: 15px;">
         <h1>FORMULARIO DE CONTACTO</h1>           
     </header>
-    <form>
-        <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" for="nombre">Nombre: </label>
-        <input type="text" placeholder="Escriba su nombre: " />
-        <label style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" for="address">Direccion: </label>
-        <input type="text" placeholder="Escriba su direccion: " />
+    <form action="" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre: " />
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido: " />
+        <label for="address">Direccion: </label>
+        <input type="text" name="address" id="address" placeholder="Escriba su direccion: " />
+        <label for="correoe">Correo electronico: </label>
+        <input type="email" name="correoe" id="correoe" placeholder="Correo electronico: " />
+        <label for="servicio">Seleccione servicio: </label>
+        <select id="servicio">
+            <option value="1">Preparado de helados de chocolate</option>
+            <option value="2">Preparado de helados de pistacho</option>
+            <option value="3">Preparado de helados de frutilla</option>
+        </select>
+        <label for="servicioextra">Extras para su servicio: </label>
+        <textarea id="servicioextra"></textarea>
+        <label>Pago al contado<input type="radio" value="contado" name="pagocontado"></label>
+        <label>Pago con tarjeta<input type="radio" value="tarjeta" name="pagotarjeta"></label>
+        <button>Enviar</button>
     </form>
 </body>
 </html>
