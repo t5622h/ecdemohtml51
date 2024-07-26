@@ -1,0 +1,31 @@
+body{
+    background-color: darkseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+input[type="text"], input[type="email"], select{
+    background: white;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid blueviolet;
+    margin-bottom: 15px;
+}
+form{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+header{
+    background-color: chocolate;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
