@@ -3,9 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="hojaestilo00.css" />
         <title>DEMOSTRACION DE CODIGO HTML 01</title>
-        <style>
+        <!-- <style>
+            main{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: red;
+                padding: 20px;
+                margin: 20px;
+                background-color: white;
+                box-shadow: 10px 5px 5px red;
+            }
             header{
                 background-color: chocolate;
                 font-style: italic;
@@ -16,13 +26,10 @@
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
-            main{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                color: red;
-                padding: 20px;
-                margin: 20px;
-                background: white;
-                box-shadow: 10px 5px 5px red;
+            nav{
+                background: yellow;
+                display: flex;
+                justify-content: center;
             }
             nav a{
                 color: black;
@@ -30,17 +37,41 @@
                 text-align: center;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
-        </style>
+            body{
+                background-color: darkseagreen;
+            }
+            h1{
+                font-family: 'Playwrite AR', cursive;
+            }
+            p{
+                color: white; font-weight: bold;
+            }
+            #textodesc1{
+                color: red;
+            }
+            #textodesc2{
+                color: red;
+            }
+            #textodesc3{
+                color: red;
+            }
+            footer{
+                background: blue;
+                color: burlywood;
+                text-align: right;
+                padding: 10px;
+            }
+        </style> -->
     </head>
-    <body style="background-color: darkseagreen;">
+    <body>
         <header>
-            <h1 style="font-family: Playwrite AR, cursive;">Titulo interno temporal de la pagina HELADOS SONRIENTES</h1>           
+            <h1>Titulo interno temporal de la pagina HELADOS SONRIENTES</h1>           
         </header>
-        <nav style="background: yellow; display: flex; justify-content:center">
+        <nav>
             <a href="#inicio">Inicio</a>
             <a href="#acerca">Acerca de</a>
             <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
+            <a id="vinculocontacto" href="#contacto">Contacto</a>
         </nav>
             <h2>Esto se escribio en VSC</h2>
             <h2>algo mas escrito en VSC</h2>
@@ -48,15 +79,15 @@
             <main>
                 <h2>Acerca de nosotros</h2>
                 <img width="100" alt="cono de helado sonriente" src="https://cdn-icons-png.flaticon.com/512/5976/5976353.png" />
-                <p>Somos una empresa dedicada a ofrecer los mejores servicios en desarrollo web. Nuestro equipo está comprometido con la calidad y la satisfacción del cliente.</p>
+                <p id="textodesc1">Somos una empresa dedicada a ofrecer los mejores servicios en desarrollo web. Nuestro equipo está comprometido con la calidad y la satisfacción del cliente.</p>
                 <h3>Nuestros servicios</h3>
-                <p>Ofrecemos una amplia gama de servicios, incluyendo diseño web, desarrollo de aplicaciones, y soluciones de marketing digital. Estamos aquí para ayudarte a alcanzar tus objetivos.</p>
+                <p id="textodesc2">Ofrecemos una amplia gama de servicios, incluyendo diseño web, desarrollo de aplicaciones, y soluciones de marketing digital. Estamos aquí para ayudarte a alcanzar tus objetivos.</p>
                 <h3>Contactanos</h3>
-                <p>Si tienes alguna pregunta o necesitas más información, no dudes en <a href="contactform.html">contactarnos</a>. Estamos aquí para ayudarte.</p>
+                <p id="textodesc3">Si tienes alguna pregunta o necesitas más información, no dudes en <a href="contactform.html">contactarnos</a>. Estamos aquí para ayudarte.</p>
             </main>
             <hr> 
-        <footer style="background: blue; color:burlywood; text-align:right; padding: 10px;">
-            <p style="color: white; font-weight: bold;">&copy; 2024 Helados RicoRico. Todos los derechos reservados.</p>
+        <footer>
+            <p>&copy; 2024 Helados RicoRico. Todos los derechos reservados.</p>
         </footer>
     </body>
 </html>
